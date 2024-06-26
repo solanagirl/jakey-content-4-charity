@@ -12,6 +12,16 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          "jakey": "url('/jakeybackground.jpg')",
+      },
+      colors: {
+        "blue": "#0d2c54",
+        "green": "#7FB800",
+        "light-blue": "#00a6ed",
+        "yellow": "#FFB400",
+        "tangelo": "#f6511d",
+      },
+      dropShadow: {
       },
     },
   },
