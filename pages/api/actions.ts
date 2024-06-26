@@ -54,6 +54,11 @@ export default function handler(
   res: NextApiResponse<ActionGetResponse>,
 ) {
   if (req.method === 'OPTIONS') {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Content-Encoding', 'compress');
+    res.setHeader('Accept-Encoding', 'compress');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Encoding, Accept-Encoding');
     res.status(200).json({ 
         "title": "JakeyContent4Charity",
         "icon": "https://pbs.twimg.com/media/GRAgTyeX0AAUl6i?format=jpg&name=large",
@@ -69,6 +74,11 @@ export default function handler(
           },
        });
 } else if (req.method == 'POST') {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Content-Encoding', 'compress');
+    res.setHeader('Accept-Encoding', 'compress');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Encoding, Accept-Encoding');
   res.status(200).json({ 
     "title": "JakeyContent4Charity",
     "icon": "https://pbs.twimg.com/media/GRAgTyeX0AAUl6i?format=jpg&name=large",
@@ -84,6 +94,11 @@ export default function handler(
       },
    });
 } else if (req.method == 'GET') {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Content-Encoding', 'compress');
+    res.setHeader('Accept-Encoding', 'compress');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Encoding, Accept-Encoding');
   res.status(200).json({ 
     "title": "JakeyContent4Charity",
     "icon": "https://pbs.twimg.com/media/GRAgTyeX0AAUl6i?format=jpg&name=large",
