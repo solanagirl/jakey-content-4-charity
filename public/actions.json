@@ -2,7 +2,7 @@
     "rules": [
         {
             "pathPattern": "/video",
-            "apiPath": "/api/getReading"
+            "apiPath": "/api/video"
         }
     ]
 }
